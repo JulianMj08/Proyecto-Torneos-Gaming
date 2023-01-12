@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 400px;
+    border-bottom: solid 1px #ddd;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info {
+    align-self: center;
+    justify-self: center;
+}
+.info h1 {
+    color: #333;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+.info p {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.info button {
+    background-color: #fe711d;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    padding: 12px 24px;
+}
