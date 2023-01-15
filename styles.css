@@ -85,7 +85,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, 150px);
     justify-content: center;
-    gap: 20px;
+    gap: 19px;
 }
 .menu-grid-item img{
     width: 100%;
