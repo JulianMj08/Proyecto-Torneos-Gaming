@@ -7,7 +7,7 @@ main {
 }
 .hero {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: minmax(300px, 2fr) 3fr;
     grid-auto-rows: 550px;
     border-bottom: solid 1px #ddd;
 }
@@ -49,7 +49,7 @@ main {
 .dishes-grid {
    
     display: grid;
-    grid-template-columns: repeat(4,minmax(150px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
     grid-auto-rows: 1fr;
     gap: 15px;  
     justify-content: center;
@@ -83,7 +83,7 @@ main {
 }
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 250px));
+    grid-template-columns: repeat(auto-fit, 150px);
     justify-content: center;
     gap: 20px;
 }
@@ -97,4 +97,17 @@ main {
     background-color: coral;
     padding: 15px;
     border-top-left-radius: 40px;
+}
+
+@media screen and (max-width: 768px) {
+   .hero-image {
+    display: none;
+   } 
+   .hero {
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+   }
+   .dishes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
+   }
 }
