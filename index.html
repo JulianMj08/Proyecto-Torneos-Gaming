@@ -5,52 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Proyecto Grid</title>
+    <link rel="icon"size=192x192 href="./favicon.ico" type="image/ico">
+    <meta name="Author" content="Julian Gómez Henao">
+    <title>Torneos Gaming</title>
 </head>
 <body>
     <main>
+        <!--HERO-->
         <section class="hero">
-           
             <div class="info">
-                <h1>Check The <br> Best Food</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lectus ducimus consectetur.</p>
-                <button>Book a table</button>  
+                <h1>Torneos De  <br> Fin De Año</h1>
+                <p>Registrate ya mismo y separa tu cupo para el evento gaming más grande de Año. Cupos limitados.</p>
+                <button><a style="text-decoration: none;" href="./formulario.html">Registrarse</a></button>
             </div>
-            <img class="hero-image" src="./imagenes/hero.png" alt="plato de pasta con vegetales">
-        
+            <img class="hero-image" src="./imagenes/imagen-hero.jpg" alt="imagen gaming">
         </section>
-        <section class="dishes">
-            <h2 class="dishes-title"> Our Services</h2>
-            <div class="dishes-grid">
-                <img class="dishes-item dishes-item__big" src="./imagenes/video.png" alt="plato de comida">
-                <img class="dishes-item" src="./imagenes/dish1.png"alt="plato de comida">
-                <img class="dishes-item"src="./imagenes/dish2.png" alt="plato de comida">
-                <img class="dishes-item"src="./imagenes/dish3.png" alt="plato de comida">
-                <img class="dishes-item"src="./imagenes/dish4.png" alt="plato de comida">
+
+        <!--CONSOLAS-->
+        <section class="consolas">
+            <h2 class="consolas-title">Consolas</h2>
+            <div class="consolas-grid">
+                <video muted autoplay loop preload="auto" class="consolas-item consolas-item__big"src="./imagenes/video-gaming.mp4"></video>
+                <img class="consolas-item" src="./imagenes/xbox.jpg"alt="control de xbox">
+                <img class="consolas-item"src="./imagenes/pc-gaming.jpg" alt="pc gaming">
+                <img class="consolas-item"src="./imagenes/nintendo.jpg" alt="nintendo">
+                <img class="consolas-item"src="./imagenes/mobile-gaming.jpg" alt="mobile gaming">
+                <img class="consolas-item"src="./imagenes/pc-gaiming-dos.webp" alt="pc gaiming">
+                <img class="consolas-item"src="./imagenes/playstation-5.webp" alt="playstation 5">
             </div>
         </section>
 
-        <section class="menu">
-            <h2 class="menu-title"> Home Menu</h2>
-            <div class="menu-grid">
-                <div class="menu-grid-item">
-                    <img src="./imagenes/plate1.png" alt="plato de pasta">
+        <!--INFORMACION DEL EVENTO-->
+        <section class="container-informacion">
+            <h2 class="title-informacion">Aquí Toda La Información Del Evento</h2>
+            <h3>Cuándo y dónde</h3>
+            <div class="container-fecha-ubicacion">
+                <div class="container-fecha">
+                    <img src="./iconos/calendario.png" width="24" height="24" alt="icono calendario">
+                    <div>
+                        <p>Fecha y hora</p>
+                        <p class="hora">Viernes, 26 de May. de 2023 14:00 - 19:00 CEST</p>
+                    </div>
                 </div>
-                <div class="menu-grid-item">
-                    <img src="./imagenes/plate2.png" alt="plato de pasta">
+            
+                <div class="container-ubicacion">
+                    <img src="./iconos/mapa.png" width="24" height="24" alt="icono Ubicación">
+                    <div>
+                        <p>Ubicación</p>
+                        <p class="direccion">Paseo de extremadura No.18 28011 Madrid</p>
+                    </div>
                 </div>
-                <div class="menu-grid-item">
-                    <img src="./imagenes/plate3.png" alt="plato de pasta">
-                </div>
-                <div class="menu-grid-item">
-                    <img src="./imagenes/plate4.png" alt="plato de pasta">
-                </div>
-                <div class="menu-grid-item">
-                    <img src="./imagenes/plate5.png" alt="plato de pasta">
-                </div>
+
+                <!--MAPA DE UBICACION DEL EVENTO-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.764584480448!2d-3.7266566999999995!3d40.414065699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42280a45e2c765%3A0xbea0c7c3c27b7d2c!2sP.%C2%BA%20de%20Extremadura%2C%2018%2C%2028011%20Madrid!5e0!3m2!1ses-419!2ses!4v1683451488363!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
+        <!--SECCION ACERCA DEL EVENTO-->
+
+        <section class="acerca-evento">
+            <h2>Acerca de este evento</h2>
+            <p>Torneos Gaming en conjunto con Coca Cola y la escuela de desarrollo Master class se prepara para lanzar el evento de torneos gaming mas grande del año</p>
+            <p>Los participantes tendran que demostrar sus habilidades y todo su nivel en las eliminatorias de cada torneo. Podran participar tanto mujeres como hombres de todo el mundo, se jugarán torneos de Fornite, Fifa 23, Gears of wars 5, Super MArio kart, call of duty Mobile.</p>
+            <p>El evento tendrá lugar el próximo 28 de Mayo y se espera la presencia de mas de 150 participantes. Será un ambiente muy divertido donde los participantes podrán disfrutar de bebida y palomitas mientras demuestran sus habilidades en el transcurso del evento.</p>
+        </section>
+
+        <section class="juegos">
+            <h2 class="juegos-title">Juegos competitvos</h2>
+            <div class="juegos-grid">
+                <div class="juegos-grid-item">
+                    <img src="./imagenes/fornite-2.jpg" alt="fornite">
+                </div>
+                <div class="juegos-grid-item">
+                    <img src="./imagenes/fifa-23.webp" alt="fifa 23">
+                </div>
+                <div class="juegos-grid-item">
+                    <img src="./imagenes/gears-5.jpeg" alt="gears of wars 5">
+                </div>
+                <div class="juegos-grid-item">
+                    <img src="./imagenes/mario-kart-2.jpg" alt="mario kart">
+                </div>
+                <div class="juegos-grid-item">
+                    <img src="./imagenes/call-of-duty-mobile.jpg" alt="call of duty">
+                </div>
+            </div>
+        </section>
     </main>
+    <!--FOOTER-->
+    <footer>
+        <p>Torneos Gaming</p>
+        <p>© 2023 Torneos Gaming</p>
+    </footer>
 </body>
 </html>
