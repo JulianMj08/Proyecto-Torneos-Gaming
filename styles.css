@@ -53,8 +53,8 @@ main {
     background-color: #52d8ed;
     border: none;
     border-radius: 20px;
-    color: #333;
-    padding: 12px 24px;
+    color: #222; /* Adjusted for contrast from #333 */
+    padding: 17px 24px; /* Adjusted for 44px touch target (was 12px 24px) */
 }
 
 /*CONSOLAS */
@@ -220,7 +220,7 @@ footer :nth-child(1) {
     font-family: cursive;
     font-size: 2.5rem;
     font-weight: 900;
-    color: rgb(23, 23, 104);
+    color: #8c8cff; /* Adjusted for contrast from rgb(23, 23, 104) */
 }
 
 footer :nth-child(2) {
@@ -272,7 +272,7 @@ form input {
 }
 
 .contenedor-enviar-borrar button {
-    padding: 7px 30px;
+    padding: 14px 30px; /* Adjusted for 44px touch target (was 7px 30px) */
     border-radius: 12px;
     border: none;
     margin: 20px 0;
