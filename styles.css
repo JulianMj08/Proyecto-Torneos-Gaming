@@ -182,10 +182,11 @@ iframe {
     grid-template-columns: repeat(auto-fit, 210px);
     justify-content: center;
     gap: 19px;
-    transition: all 30ms;
+    /* transition: all 30ms; */ /* Removed as per requirement */
 }
 
 .juegos-grid-item img{
+    transition: transform 0.3s ease; /* Added as per requirement */
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -202,7 +203,7 @@ iframe {
     
 }
 
-.juegos-grid-item :hover {
+.juegos-grid-item:hover img { /* Changed selector and applies transform to image */
     transform: scale(1.4);
 }
 
@@ -216,14 +217,14 @@ footer {
     padding: 20px;
 }
 
-footer :nth-child(1) {
+.footer-title {
     font-family: cursive;
     font-size: 2.5rem;
     font-weight: 900;
     color: #8c8cff; /* Adjusted for contrast from rgb(23, 23, 104) */
 }
 
-footer :nth-child(2) {
+.footer-copyright {
     margin-top: 10px;
 }
 
@@ -311,6 +312,15 @@ form input {
     grid-template-columns: repeat(auto-fit, minmax(75px, 140px));
     grid-auto-rows: 1fr;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .juegos-grid-item:hover img {
+    transform: none; /* Disables scaling on hover for reduced motion */
+  }
+  .juegos-grid-item img {
+    transition: none; /* Disables transition for reduced motion */
+  }
 }
 
 
