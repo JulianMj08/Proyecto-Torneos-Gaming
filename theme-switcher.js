@@ -18,14 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // If no saved theme, check system preference if possible, otherwise default to 'dark'
     if (!currentTheme) {
-        // Optional: Check system preference for dark mode
-        // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        //    currentTheme = 'dark';
-        // } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        //    currentTheme = 'light';
-        // } else {
-        //    currentTheme = 'dark'; // Default if no system preference or not supported
-        // }
         currentTheme = 'dark'; // Simplified: Default to dark if nothing saved.
     }
 

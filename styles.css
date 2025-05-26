@@ -63,14 +63,7 @@ main {
     margin-bottom: 24px;
 }
 
-.info button { /* This style might be unused if all buttons are links now, but kept for safety */
-    width: 150px;
-    background-color: var(--accent-primary);
-    border: none;
-    border-radius: 20px;
-    color: var(--text-on-accent); 
-    padding: 17px 24px; 
-}
+/* .info button rule removed as it's no longer used */
 
 .info-button-link {
     display: inline-block;
@@ -316,9 +309,7 @@ form input {
    .hero .info h1{
     margin-top: 20px;
    }
-   .info button { /* This style might be unused */
-    margin-bottom: 20px;
-   }
+   /* .info button rule in media query removed as it's no longer used */
    .info-button-link { /* Ensure link also has margin if it was from the button */
     margin-bottom: 20px;
    }
