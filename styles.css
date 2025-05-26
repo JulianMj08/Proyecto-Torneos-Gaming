@@ -57,6 +57,18 @@ main {
     padding: 17px 24px; /* Adjusted for 44px touch target (was 12px 24px) */
 }
 
+.info-button-link {
+    display: inline-block;
+    width: 150px; /* From original button */
+    background-color: #52d8ed;
+    border: none;
+    border-radius: 20px;
+    color: #222; /* Adjusted for contrast from #333 */
+    padding: 17px 24px; /* Adjusted for 44px touch target (was 12px 24px) */
+    text-decoration: none;
+    text-align: center;
+}
+
 /*CONSOLAS */
 .consolas {
     margin: 50px 0;
@@ -321,6 +333,18 @@ form input {
   .juegos-grid-item img {
     transition: none; /* Disables transition for reduced motion */
   }
+}
+
+/* --- Focus Visibility --- */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+iframe:focus { /* Added iframe for the map */
+  outline: 3px solid #7BBEF3; /* Light blue outline */
+  outline-offset: 2px;         /* Offset for better visibility, doesn't overlap element */
+  box-shadow: 0 0 0 4px rgba(123, 190, 243, 0.4); /* Subtle glow for extra emphasis */
 }
 
 
