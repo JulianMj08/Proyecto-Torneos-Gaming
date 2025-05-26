@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon"size=192x192 href="./favicon.ico" type="image/ico">
     <meta name="Author" content="Julian Gómez Henao">
+    <meta name="description" content="Regístrate para los Torneos de Fin de Año, el evento gaming más grande. Participa en torneos de Fortnite, FIFA 23, Gears 5, Mario Kart y Call of Duty Mobile. ¡Cupos limitados!">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-src https://www.google.com;">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <title>Torneos Gaming</title>
 </head>
 <body>
@@ -15,23 +19,26 @@
         <section class="hero">
             <div class="info">
                 <h1>Torneos De  <br> Fin De Año</h1>
+                <button id="theme-toggle" aria-label="Cambiar tema">☀️</button>
                 <p>Registrate ya mismo y separa tu cupo para el evento gaming más grande de Año. Cupos limitados.</p>
-                <button><a style="text-decoration: none;" href="./formulario.html">Registrarse</a></button>
+                <a class="info-button-link" href="./formulario.html">Registrarse</a>
             </div>
-            <img class="hero-image" src="./imagenes/imagen-hero.jpg" alt="imagen gaming">
+            <img class="hero-image" src="./imagenes/imagen-hero.jpg" alt="Collage de personajes de videojuegos populares">
         </section>
 
         <!--CONSOLAS-->
         <section class="consolas">
             <h2 class="consolas-title">Consolas</h2>
             <div class="consolas-grid">
-                <video muted autoplay loop preload="auto" class="consolas-item consolas-item__big"src="./imagenes/video-gaming.mp4"></video>
-                <img class="consolas-item" src="./imagenes/xbox.jpg"alt="control de xbox">
-                <img class="consolas-item"src="./imagenes/pc-gaming.jpg" alt="pc gaming">
-                <img class="consolas-item"src="./imagenes/nintendo.jpg" alt="nintendo">
-                <img class="consolas-item"src="./imagenes/mobile-gaming.jpg" alt="mobile gaming">
-                <img class="consolas-item"src="./imagenes/pc-gaiming-dos.webp" alt="pc gaiming">
-                <img class="consolas-item"src="./imagenes/playstation-5.webp" alt="playstation 5">
+                <video muted autoplay loop preload="auto" class="consolas-item consolas-item__big"src="./imagenes/video-gaming.mp4">
+                    <track kind="captions" srclang="es" label="Español" src="captions_es.vtt">
+                </video>
+                <img class="consolas-item" src="./imagenes/xbox.jpg" alt="Control de consola Xbox blanco sobre fondo oscuro">
+                <img class="consolas-item" src="./imagenes/pc-gaming.jpg" alt="Computadora de escritorio para gaming con iluminación RGB">
+                <img class="consolas-item" src="./imagenes/nintendo.jpg" alt="Consola Nintendo Switch con Joy-Cons rojo y azul">
+                <img class="consolas-item" src="./imagenes/mobile-gaming.jpg" alt="Persona jugando videojuegos en un smartphone">
+                <img class="consolas-item" src="./imagenes/pc-gaiming-dos.webp" alt="Primer plano de un teclado y mouse para gaming iluminados">
+                <img class="consolas-item" src="./imagenes/playstation-5.webp" alt="Consola PlayStation 5 con control DualSense">
             </div>
         </section>
 
@@ -41,7 +48,7 @@
             <h3>Cuándo y dónde</h3>
             <div class="container-fecha-ubicacion">
                 <div class="container-fecha">
-                    <img src="./iconos/calendario.png" width="24" height="24" alt="icono calendario">
+                    <img src="./iconos/calendario.png" width="24" height="24" alt="Icono de calendario para la fecha del evento">
                     <div>
                         <p>Fecha y hora</p>
                         <p class="hora">Viernes, 26 de May. de 2023 14:00 - 19:00 CEST</p>
@@ -49,7 +56,7 @@
                 </div>
             
                 <div class="container-ubicacion">
-                    <img src="./iconos/mapa.png" width="24" height="24" alt="icono Ubicación">
+                    <img src="./iconos/mapa.png" width="24" height="24" alt="Icono de marcador de mapa para la ubicación del evento">
                     <div>
                         <p>Ubicación</p>
                         <p class="direccion">Paseo de extremadura No.18 28011 Madrid</p>
@@ -57,7 +64,7 @@
                 </div>
 
                 <!--MAPA DE UBICACION DEL EVENTO-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.764584480448!2d-3.7266566999999995!3d40.414065699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42280a45e2c765%3A0xbea0c7c3c27b7d2c!2sP.%C2%BA%20de%20Extremadura%2C%2018%2C%2028011%20Madrid!5e0!3m2!1ses-419!2ses!4v1683451488363!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Google Maps view of event location at Paseo de Extremadura, 18, Madrid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.764584480448!2d-3.7266566999999995!3d40.414065699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42280a45e2c765%3A0xbea0c7c3c27b7d2c!2sP.%C2%BA%20de%20Extremadura%2C%2018%2C%2028011%20Madrid!5e0!3m2!1ses-419!2ses!4v1683451488363!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -74,27 +81,28 @@
             <h2 class="juegos-title">Juegos competitvos</h2>
             <div class="juegos-grid">
                 <div class="juegos-grid-item">
-                    <img src="./imagenes/fornite-2.jpg" alt="fornite">
+                    <img src="./imagenes/fornite-2.jpg" alt="Captura de pantalla del juego Fortnite">
                 </div>
                 <div class="juegos-grid-item">
-                    <img src="./imagenes/fifa-23.webp" alt="fifa 23">
+                    <img src="./imagenes/fifa-23.webp" alt="Imagen promocional del juego FIFA 23">
                 </div>
                 <div class="juegos-grid-item">
-                    <img src="./imagenes/gears-5.jpeg" alt="gears of wars 5">
+                    <img src="./imagenes/gears-5.jpeg" alt="Arte conceptual del juego Gears 5">
                 </div>
                 <div class="juegos-grid-item">
-                    <img src="./imagenes/mario-kart-2.jpg" alt="mario kart">
+                    <img src="./imagenes/mario-kart-2.jpg" alt="Personajes de Mario Kart en una carrera">
                 </div>
                 <div class="juegos-grid-item">
-                    <img src="./imagenes/call-of-duty-mobile.jpg" alt="call of duty">
+                    <img src="./imagenes/call-of-duty-mobile.jpg" alt="Escena de acción del juego Call of Duty Mobile">
                 </div>
             </div>
         </section>
     </main>
     <!--FOOTER-->
     <footer>
-        <p>Torneos Gaming</p>
-        <p>© 2023 Torneos Gaming</p>
+        <p class="footer-title">Torneos Gaming</p>
+        <p class="footer-copyright">© 2023 Torneos Gaming</p>
     </footer>
+    <script src="theme-switcher.js" defer></script>
 </body>
 </html>
